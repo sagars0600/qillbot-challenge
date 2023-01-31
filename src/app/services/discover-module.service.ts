@@ -14,7 +14,7 @@ export class DiscoverModuleService {
       })
     };
    }
-   getTimeZoneList() {
+   getMovieList() {
     return this.http.get('../../assets/movielist.json');
   }
 }
