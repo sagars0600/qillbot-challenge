@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { DiscoverComponent } from './views/discover/discover.component';
 import { SidenavComponent } from './views/sidenav/sidenav.component';
 
@@ -15,6 +16,7 @@ import { SidenavComponent } from './views/sidenav/sidenav.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatSidenavModule,
     HttpClientModule,
   ],
   providers: [],

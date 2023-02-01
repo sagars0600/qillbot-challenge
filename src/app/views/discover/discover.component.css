@@ -6,25 +6,37 @@
   width: fit-content;
   background: #394b61;
   border-radius: 11px;
+  cursor: pointer;
 }
 
-.paddings{
-  padding-left: 1.5rem;
+.paddings {
+  padding-left: 4rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
 }
 
-.show-img{
+.cards {
+  display: flex;
+}
+
+.paddings-card2 {
+  padding-left: 4.5rem;
+  padding-right: 2rem;
+}
+
+.show-img {
   width: 85%;
   height: 30rem;
 }
 
-.details{
+.details {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.box{
-  background: #394B61;
+.box {
+  background: #394b61;
   border-radius: 11px;
   display: flex;
 }
@@ -58,49 +70,47 @@
 
 .title-head {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
   color: #d4d7dd;
 }
 
 .info {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 21px;
   color: #d4d7dd;
 }
 
-.info-para{
-  font-size: 18px;
+.info-para {
+  font-size: 20px;
   color: #d4d7dd;
   width: 75%;
 }
 
 .btn-Play {
-  background-color: #00E0FF;
+  background-color: #00e0ff;
   color: black;
   font-weight: 700;
   padding: 0.6rem 1.9rem;
   border-radius: 4px;
 }
 
-.btn-Play:hover{
+.btn-Play:hover {
   background-color: transparent;
-  color: #00E0FF;
-  border-color: #00E0FF;
+  color: #00e0ff;
+  border-color: #00e0ff;
 }
-
 
 .btn-Watch {
-  color: #00E0FF;
+  color: #00e0ff;
   font-weight: 700;
-  border-color: #00E0FF;
+  border-color: #00e0ff;
   padding: 0.6rem 1.9rem;
   border-radius: 4px;
-
 }
 
-.btn-Watch:hover{
-  background-color: #00E0FF;
-  border-color: #00E0FF;
+.btn-Watch:hover {
+  background-color: #00e0ff;
+  border-color: #00e0ff;
   color: black;
 }
 .search-bar input,

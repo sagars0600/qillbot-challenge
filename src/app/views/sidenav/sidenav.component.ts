@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-
+  clickActive:any;
   constructor() { }
 
   ngOnInit(): void {
+    this.clickActive = window.location.href.split('/').pop();
   }
 
 }
