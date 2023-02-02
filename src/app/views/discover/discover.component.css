@@ -10,8 +10,8 @@
 }
 
 .paddings {
-  padding-left: 4rem;
-  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
   padding-top: 2rem;
 }
 
@@ -21,7 +21,7 @@
 
 .paddings-card2 {
   padding-left: 4.5rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .show-img {
@@ -83,9 +83,10 @@
 .info-para {
   font-size: 20px;
   color: #d4d7dd;
-  width: 75%;
 }
-
+.active{
+  color: #00e0ff !important;
+}
 .btn-Play {
   background-color: #00e0ff;
   color: black;
@@ -113,6 +114,7 @@
   border-color: #00e0ff;
   color: black;
 }
+
 .search-bar input,
 .search-btn,
 .search-btn:before,
@@ -234,3 +236,6 @@
 .search-bar input:valid + .search-btn:active {
   transform: translateY(1px);
 }
+
+
+

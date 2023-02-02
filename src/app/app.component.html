@@ -1,1 +1,69 @@
-<router-outlet></router-outlet>
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  Quillbot Challenge
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img
+      class="avatar mat-elevation-z8"
+      src="https://source.unsplash.com/c_GmwfHBDzk/200x200"
+    />
+
+    <h4 class="name">John Smith</h4>
+    <p class="designation">Software Engineer</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/discover" >
+      <mat-icon class="active">find_replace</mat-icon>
+      <span class="active">Discover</span>
+    </button>
+    <button mat-button class="menu-button" >
+      <mat-icon>list</mat-icon>
+      <span>Playlist</span>
+    </button>
+    <button mat-button class="menu-button" >
+      <mat-icon>movie_creation</mat-icon>
+      <span>Movie</span>
+    </button>
+    <button mat-button class="menu-button" >
+      <mat-icon>movie_filter</mat-icon>
+      <span>TV Shows</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" >
+      <mat-icon>help</mat-icon>
+      <span>Watch Later</span>
+    </button>
+    <button mat-button class="menu-button" >
+      <mat-icon>favorite_border</mat-icon>
+      <span>Recommended</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" >
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+    <button mat-button class="menu-button" >
+      <mat-icon>power_settings_new</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
